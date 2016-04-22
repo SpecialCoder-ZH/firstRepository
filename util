@@ -1,0 +1,12 @@
+public class SingleTon{
+    private singleTon instance = null;
+    private singleTon(){}
+    public static SingleTon  getInstance(){
+      if(instance==null){
+          instance = new SingleTon();
+          return instance;
+      }else{
+         return instance;
+      }
+    }
+}
